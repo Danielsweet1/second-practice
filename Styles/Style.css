@@ -1,0 +1,211 @@
+ body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+ }
+ /* -----------------------
+ styling navigation menu 
+ --------------------------*/
+ .nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 70px;
+ }
+ .first-span{
+    font-size: 25px;
+    font-weight: bold;
+ }
+.second-span a{
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+    font-weight: 550;
+}
+.nav-icon{
+    font-size: 22px;
+}
+/* -----------------------
+ styling first section 
+ --------------------------*/
+.main-div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 100px;
+}
+.header{
+    font-size: 53px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.704);
+}
+.left-div{
+    margin-top: 50px;
+
+}
+.right-div img{
+    border: 3px solid lightgrey;
+    border-radius: 50%;
+    padding: 10px;
+}
+.booking-btn{
+    display: flex;
+    align-items: center;
+    background-color: rgb(203, 15, 93);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 20px;
+}
+.fa-arrow-right-long{
+    margin-left: 10px;
+}
+/* -----------------------
+ styling second section 
+ --------------------------*/
+ .flexible{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+ }
+ hr{
+    color: gray;
+    width: 70%;
+ }
+ /* -----------------------
+ styling third section 
+ --------------------------*/
+ .third-section{
+    margin-top: 100px;
+ }
+ .cards{
+    display: grid;
+    grid-template-columns:repeat(3, 310px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+
+ }
+ .card{
+    box-shadow: 2px 5px 20px 5px lightgray;
+    padding: 15px;
+    border-radius: 10px;
+ }
+ .card img{
+    width: 100%;
+    text-align: center;
+ }
+ .second-heading{
+    text-align: center;
+    margin-bottom: 30px;
+ }
+ .info{
+    line-height: 20px;
+ }
+ .card-heading{
+    font-size: 30px;
+    font-weight: 600;
+ }
+ .ratings{
+    color: gold;
+ }
+ /*----------------------
+  stylig fourth section 
+  -----------------------*/
+  .fourth-section{
+   display: flex;
+   margin: 100px ;
+   justify-content: space-evenly;
+  }
+  .second-header{
+   font-size: 40px;
+  }
+  .first-div {
+   width: 50%;
+  }
+  /*----------------
+   styling footer 
+   -----------------*/
+   .footer{
+      text-align: center;
+      color: white;
+      background-color: rgb(10, 10, 28);
+      padding: 5px;
+   }
+   .icons a{
+      text-decoration: none;
+      color: white;
+   }
+   .icon{
+      background-color: rgb(45, 42, 42);
+      border-radius: 50%;
+      padding: 5px;
+      margin: 5px;
+   }
+   /*-------------------
+    adding media query 
+    --------------------*/
+
+
+    /* for mobile phone */
+    @media screen and (max-width:576px){
+      .hide-mobile{
+         display: none;
+      }
+      .main-div{
+         flex-direction: column-reverse;
+         align-items: center;
+         text-align: center;
+      }
+      .right-div img{
+         width: 100%;
+      }
+      .booking-btn{
+         margin: 0 auto;
+      }
+      .flexible{
+         flex-wrap: wrap;
+
+          }
+          .flexible img{
+            padding: 8px 2px;
+          }
+          hr{
+            display: none;
+          }
+          .third-section{
+            width: 100%;
+          }
+
+          .cards{
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0 10px;
+          }
+
+         .fourth-section{
+         flex-direction: column-reverse;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+
+         }
+         
+         .first-div img{
+            width: 100%;
+            margin-top: 50px;
+            
+         }
+   }
+      
+    
+
+
+
+
+    
+
+
+
